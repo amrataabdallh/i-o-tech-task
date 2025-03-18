@@ -1,7 +1,7 @@
 
 ** How to Run the Project Locally
 
-## git clone [<repository-url>](https://github.com/amrataabdallh/i-o-tech-tasc.git)
+## git clone [<repository-url>](https://github.com/amrataabdallh/i-o-tech-task)
 
 ## cd i-o-tech-task
 
