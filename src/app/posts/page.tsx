@@ -98,7 +98,6 @@ const Posts: React.FC = () => {
     // Check if post exists in the API (JSONPlaceholder has only IDs ≤ 100)
     if (post.id <= 100) {
       try {
-        setLoading(true);
         const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}`, {
           method: "PUT",
           body: JSON.stringify(updatedPost),
@@ -127,9 +126,7 @@ const Posts: React.FC = () => {
           title: "Update Failed",
           text: "There was an error updating the post.",
         });
-      } finally {
-        setLoading(false);
-      }
+      } 
     } else {
       setPosts((prevPosts) =>
         prevPosts.map((p) => (p.id === post.id ? updatedPost : p))
